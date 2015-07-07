@@ -25,13 +25,10 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
-
 	<filter>
 		<filter-name>SetCharacterEncodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -48,4 +45,15 @@
 		<filter-name>SetCharacterEncodingFilter</filter-name>
 		<url-pattern>*</url-pattern>
 	</filter-mapping>
+
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/inc/header.jsp</include-prelude>
+			<include-coda>/WEB-INF/inc/footer.jsp</include-coda>
+		</jsp-property-group>
+	</jsp-config>
+	<!-- <filter> <filter-name>springSecurityFilterChain</filter-name> <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class> 
+		</filter> <filter-mapping> <filter-name>springSecurityFilterChain</filter-name> 
+		<url-pattern>/*</url-pattern> </filter-mapping> -->
 </web-app>

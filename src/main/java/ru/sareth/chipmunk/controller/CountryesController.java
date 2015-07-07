@@ -34,6 +34,7 @@ public class CountryesController {
 
 		List<Countryes> countryes = service.findAllCountryes();
 		model.addAttribute("countryes", countryes);//this is attribute of JSP page
+		model.addAttribute("headertext","Countryes");
 		return "countryes/allcountryes";//this is view
 	}
 
