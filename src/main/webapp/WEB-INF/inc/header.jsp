@@ -24,23 +24,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">OPK Sphinx</a>
+      <a class="navbar-brand" href="#">SweetCRM</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="./">Главная<span class="sr-only">(current)</span></a></li>
-        <li><a href="./monitor.php">Монитор</a></li>
+        <li><a href="<%=request.getContextPath()%>/">Главная<span class="sr-only">(current)</span></a></li>
+
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Списки<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="./employees.php">Сотрудники</a></li>
-            <li><a href="./students.php">Студенты</a></li>
+            <li><a href="<%=request.getContextPath()%>/countryes/list">Страны</a></li>
+            <li><a href="<%=request.getContextPath()%>/regions/list">Регионы</a></li>
+            <li><a href="<%=request.getContextPath()%>/languages/list">Языки</a></li>
+            <li><a href="<%=request.getContextPath()%>/queryes/list">Запросы</a></li>
+            <li><a href="<%=request.getContextPath()%>/searchsystems/list">Поисковые системы</a></li>
             <li class="divider"></li>
-            <li><a href="./add_group.php">Создать группу</a></li>
+            <li><a href="<%=request.getContextPath()%>/parsers/list">Парсеры</a></li>
             <li class="divider"></li>
-            <li><a href="./add_student.php">Создать студента</a></li>
+            <li><a href="<%=request.getContextPath()%>/sites/list">Сайты</a></li>
           </ul>
         </li>
         
@@ -56,8 +59,8 @@
         
         
         
-    	<li class="divider"></li>
-        <li><a href="#">Здравствуйте, Sareth Zorin</a></li>	
+    	<!--<li class="divider"></li>
+        <li><a href="#">Здравствуйте, Sareth Zorin</a></li>
         <li class="divider"></li>
 		<li><a href="?is_exit=1">Выйти</a></li>
 						<li class="dropdown">
@@ -68,7 +71,7 @@
 					<li><a href="./admin_create_user.php">Создать пользователя</a></li>
 				</ul>
 				</li>
-			
+		-->
         
       </ul>
     </div><!-- /.navbar-collapse -->
